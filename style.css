@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* ESTILOS INICIAIS */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  color: #181818;
+}
+
+h1,
+h2 {
+  font-size: 64px;
+  font-family: "Advent Pro", sans-serif;
+  font-weight: bolder;
+  color: #ffffff;
+}
+
+p,
+li,
+span {
+  font-size: 18px;
+  font-family: "Manrope", sans-serif;
+  color: #f7f7f7;
+}
+
+button{
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  padding: 15px 40px;
+}
+
+/* HOME */
+
+.logo{
+  position: absolute;
+  left: 90px;
+  top: 40px;
+}
+
+.perfuma {
+  background-image: url("./imagens/bg-intro.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.perfuma-conteudo {
+  text-align: center;
+  padding-top: 120px;
+}
+
+.perfuma-conteudo span{
+  font-size: 20px;
+}
+
+.perfuma-conteudo p{
+  font-size: 30px;
+}
+
+.perfuma-conteudo h1 {
+  padding-top: 20px;
+  padding-bottom: 32px;
+  font-size: 326px;
+  margin: auto;
+  line-height: 228px;
+}
+
+.links{
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.links button{
+  background-image: linear-gradient(#A5D880, #76A751);
+  transition: .3s;
+}
+
+.links button:hover{
+
+  transform: scale(1.1);
+  transition: .3s;
+}
+
+.links a{
+  font-size: 20px;
+  color: #FFFCEC;
+}
+
+.detalhe{
+  position: absolute;
+  right: 360px;
+  top: 80px;
+  transform: translateY(0px);
+  animation: float 5s ease-in-out infinite;
+}
+
+.detalhe-left{
+  position: absolute;
+  left: 360px;
+  top: 400px;
+  transform: translateY(0px);
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-30px);
+  }
+
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 800px){
+
+  .perfuma-conteudo span{
+    font-size: 16px;
+  }
+
+  .perfuma-conteudo p{
+    font-size: 20px;
+  }
+
+  .perfuma-conteudo h1{
+    font-size: 200px;
+    line-height: 140px;
+  }
+
+  .links{
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    padding-top: 14px;
+  }
+
+  .logo{
+    position: absolute;
+    margin: auto;
+    left: 20px;
+    top: 20px;
+  }
+
+  .detalhe{
+    top: 200px;
+  }
+}
+
+@media (max-width: 600px){
+  .perfuma-conteudo h1{
+    font-size: 100px;
+    line-height: 70px;
+  }
+  .detalhe-left{
+    position: fixed;
+    left: 30px;
+    top: 100px;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+  }
+}
+
+@media (max-width: 460px){
+
+
+  .perfuma-conteudo{
+    padding-top: 80px;
+  }
+
+  .perfuma-conteudo h1{
+    font-size: 80px;
+    line-height: 56px;
+  }
+
+  .perfuma-conteudo span{
+    display: inline-block;
+    width: 15ch;
+  }
+
+  .perfuma-conteudo p{
+    font-size: 18px;
+    padding-top: 0px;
+    width: 20ch;
+    margin: auto;
+  }
+
+  .links a{
+    font-size: 16px;
+  }
+  
+  .detalhe-left{
+    position: fixed;
+    left: 30px;
+    top: 300;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+  }
+}
