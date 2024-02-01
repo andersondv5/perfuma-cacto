@@ -31,7 +31,7 @@ span {
   color: #f7f7f7;
 }
 
-button{
+button {
   border-radius: 4px;
   cursor: pointer;
   border: none;
@@ -40,10 +40,8 @@ button{
 
 /* HOME */
 
-.logo{
-  position: absolute;
-  left: 90px;
-  top: 40px;
+.logo {
+  text-align: center;
 }
 
 .perfuma {
@@ -55,14 +53,22 @@ button{
 
 .perfuma-conteudo {
   text-align: center;
-  padding-top: 120px;
 }
 
-.perfuma-conteudo span{
+.logo{
+  display: block;
+  padding-top: 80px;
+  margin: auto;
+}
+
+.perfuma-conteudo span {
   font-size: 20px;
+  display: inline-block;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
-.perfuma-conteudo p{
+.perfuma-conteudo p {
   font-size: 30px;
 }
 
@@ -74,38 +80,36 @@ button{
   line-height: 228px;
 }
 
-.links{
-  padding-top: 60px;
-  display: flex;
+.links {
+  display: grid;
+  text-align: center;
   justify-content: center;
   gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.links button{
-  background-image: linear-gradient(#A5D880, #76A751);
-  transition: .3s;
+
+
+.links button {
+  background-color: #ffffff34;
+  border: 2px solid #ffffff53;
+  width: 450px;
+  transition: 0.3s;
 }
 
-.links button:hover{
-
+.links button:hover {
   transform: scale(1.1);
-  transition: .3s;
+  transition: 0.3s;
+  background-color: #ffffff5d;
 }
 
-.links a{
+.links a {
   font-size: 20px;
-  color: #FFFCEC;
+  color: #ffffff;
 }
 
-.detalhe{
-  position: absolute;
-  right: 360px;
-  top: 80px;
-  transform: translateY(0px);
-  animation: float 5s ease-in-out infinite;
-}
-
-.detalhe-left{
+.detalhe-left {
   position: absolute;
   left: 360px;
   top: 400px;
@@ -113,65 +117,62 @@ button{
   animation: float 5s ease-in-out infinite;
 }
 
-
 .copy span{
-  display: inline-block;
+  display: flex;
+  margin: auto;
   text-align: center;
+  color: #f7f7f7;
+  font-size: 16px;
+  width: 30ch;
+  padding-top: 24px;
 }
 
-@keyframes float{
-  0%{
+@keyframes float {
+  0% {
     transform: translateY(0px);
   }
-  50%{
+  50% {
     transform: translateY(-30px);
   }
 
-  100%{
+  100% {
     transform: translateY(0px);
   }
 }
 
-@media (max-width: 800px){
-
-  .perfuma-conteudo span{
+@media (max-width: 800px) {
+  .perfuma-conteudo span {
     font-size: 16px;
   }
 
-  .perfuma-conteudo p{
+  .perfuma-conteudo p {
     font-size: 20px;
   }
 
-  .perfuma-conteudo h1{
+  .perfuma-conteudo h1 {
     font-size: 200px;
     line-height: 140px;
   }
 
-  .links{
+  .links {
     flex-direction: column;
     margin: auto;
     text-align: center;
     padding-top: 14px;
+    width: 100px;
   }
 
-  .logo{
-    position: absolute;
-    margin: auto;
-    left: 20px;
-    top: 20px;
-  }
-
-  .detalhe{
+  .detalhe {
     top: 200px;
   }
 }
 
-@media (max-width: 600px){
-  .perfuma-conteudo h1{
+@media (max-width: 600px) {
+  .perfuma-conteudo h1 {
     font-size: 100px;
     line-height: 70px;
   }
-  .detalhe-left{
+  .detalhe-left {
     position: fixed;
     left: 30px;
     top: 100px;
@@ -180,38 +181,51 @@ button{
   }
 }
 
-@media (max-width: 460px){
-
+@media (max-width: 460px) {
   .perfuma {
     padding-bottom: 100px;
   }
 
-  .perfuma-conteudo{
+  .perfuma-conteudo span {
+    font-size: 20px;
+    display: inline-block;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+
+  .perfuma-conteudo {
     padding-top: 40px;
   }
 
-  .perfuma-conteudo h1{
+  .perfuma-conteudo h1 {
     font-size: 80px;
     line-height: 56px;
   }
 
-  .perfuma-conteudo span{
+  .perfuma-conteudo span {
     display: inline-block;
     font-size: 14px;
   }
 
-  .perfuma-conteudo p{
+  .perfuma-conteudo p {
     font-size: 18px;
     padding-top: 0px;
     width: 20ch;
     margin: auto;
   }
 
-  .links a{
+  .links a {
     font-size: 16px;
   }
-  
-  .detalhe-left{
+
+  .links button {
+    background-color: #ffffff34;
+    border: 2px solid #ffffff53;
+    width: 350px;
+    transition: 0.3s;
+  }
+
+  .detalhe-left {
     position: fixed;
     left: 30px;
     top: 300;
