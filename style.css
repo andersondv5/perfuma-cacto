@@ -92,7 +92,7 @@ button {
 .links button {
   background-color: #ffffff34;
   border: 2px solid #ffffff53;
-  width: 450px;
+  width: 550px;
   transition: 0.3s;
 }
 
@@ -139,6 +139,11 @@ button {
 }
 
 @media (max-width: 800px) {
+
+  .links button {
+    width: 450px;
+  }
+  
   .perfuma-conteudo span {
     font-size: 16px;
   }
